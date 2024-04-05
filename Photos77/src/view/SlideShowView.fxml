@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SlideShowController">
+   <children>
+      <Label fx:id="albumHeader" alignment="CENTER" layoutX="235.0" layoutY="22.0" prefHeight="17.0" prefWidth="131.0" text="Photo Albums" />
+      <Button fx:id="logOutButton" layoutX="463.0" layoutY="17.0" mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="131.0" text="Logout">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="23.0" layoutY="18.0" mnemonicParsing="false" onAction="#backButton" prefHeight="26.0" prefWidth="131.0" text="Back">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageView" fitHeight="326.0" fitWidth="567.0" layoutX="26.0" layoutY="60.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../data/PhotoUnavailable.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="backwardSlideButton" layoutX="171.0" layoutY="440.0" mnemonicParsing="false" onAction="#backwardSlideButton" prefHeight="26.0" prefWidth="131.0" text="Backward">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="forwardSlideButton" layoutX="334.0" layoutY="440.0" mnemonicParsing="false" onAction="#forwardSlideButton" prefHeight="26.0" prefWidth="131.0" text="Forward">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="photoLabelName" layoutX="285.0" layoutY="396.0" prefHeight="17.0" prefWidth="163.0" text="Photo Name" />
+      <Label fx:id="endOfAlbum" layoutX="514.0" layoutY="432.0" text="End" textFill="#0033b5" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="beginningOfAlbum" layoutX="61.0" layoutY="432.0" text="Beginning" textFill="#0033b5" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="396.0" text="Photo Name: " />
+      <Label layoutX="223.0" layoutY="413.0" text="Caption: " />
+      <Label fx:id="captionLabelName" layoutX="285.0" layoutY="413.0" prefHeight="17.0" prefWidth="163.0" text="Caption Name" />
+   </children>
+</AnchorPane>

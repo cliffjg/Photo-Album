@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminSubSystemController">
+   <children>
+      <ListView fx:id="listView" layoutX="23.0" layoutY="50.0" prefHeight="255.0" prefWidth="554.0" />
+      <Label alignment="CENTER" layoutX="235.0" layoutY="21.0" prefHeight="17.0" prefWidth="131.0" text="Admin Subsystem" />
+      <Button fx:id="logOutButton" layoutX="445.0" layoutY="17.0" mnemonicParsing="false" onAction="#logOutButton" prefHeight="26.0" prefWidth="131.0" text="Logout">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteUserButton" layoutX="366.0" layoutY="330.0" mnemonicParsing="false" onAction="#deleteUserButton" prefHeight="26.0" prefWidth="150.0" text="Delete User" />
+      <Button fx:id="createUserButton" layoutX="85.0" layoutY="330.0" mnemonicParsing="false" onAction="#createUserButton" prefHeight="26.0" prefWidth="150.0" text="Create User" />
+      <TextField fx:id="userNameText" layoutX="363.0" layoutY="330.0" prefHeight="26.0" prefWidth="150.0" promptText="Enter User Name" visible="false" />
+      <Button fx:id="clearButton" layoutX="402.0" layoutY="362.0" mnemonicParsing="false" onAction="#clearButton" text="Cancel" visible="false" />
+      <Button fx:id="saveButton" layoutX="466.0" layoutY="362.0" mnemonicParsing="false" onAction="#saveButton" text="Save" visible="false" />
+      <Label fx:id="userNameLabel" layoutX="288.0" layoutY="330.0" prefHeight="26.0" prefWidth="70.0" text="User Name:" visible="false" />
+      <Label fx:id="duplicateEntry" layoutX="289.0" layoutY="413.0" prefHeight="17.0" prefWidth="227.0" text="*Duplicate User/ Invalid Entry!" textFill="#da0707" visible="false" />
+   </children>
+</AnchorPane>
